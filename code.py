@@ -1,4 +1,5 @@
 def function1(a):
+    '''Counts the frequency of bases in a sequence and returns a dictionary of base counts'''
     b = dict()
     for c in a:
         if c not in b:
@@ -8,6 +9,7 @@ def function1(a):
     return b
 
 def function2(a):
+    '''Calculates the frequency of base counts as a proportion and prints them'''
     print('freqs')
     total = float(sum([a[b] for b in a.keys()]))
     for b in a.keys():
